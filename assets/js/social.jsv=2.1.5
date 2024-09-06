@@ -1,0 +1,15 @@
+// $Id: social.js 264 2019-03-19 17:58:10Z hayk $
+// µ Հ
+
+$(document).ready(function(){
+
+	head.js("//platform.twitter.com/widgets.js");
+	head.js("//platform.linkedin.com/in.js");
+	head.js("//connect.facebook.net/"+locale+"/all.js#xfbml=1");
+	head.js("//cdn.connect.mail.ru/js/loader.js");
+	head.js("//vk.com/js/api/openapi.js?109", function() {
+		VK.init({apiId: vkID, onlyWidgets: true});
+		VK.Widgets.Like("vk_like", {type: "mini", pageUrl: vkURL, height: 20});
+	});
+
+});
